@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(28, 22, 35);
+}
+h5{
+    border:purple 3px solid;
+    background-color: rgb(228, 228, 228);
+    color:rgb(0, 0, 0);
+    margin:auto;
+    padding:6px;
+    font-size: 25px;
+}
+p{
+    color:orange;
+    font-size: 25px;
+}
+fieldset{
+    border: dotted purple;
+}
+a{
+    color:orange;
+    text-decoration:none;
+    font-size: 30px;
+    margin-left: 20px;
+}
+a:hover{
+    text-decoration:underline;
+    color:rgb(255, 165, 0);
+}
+.botoes{
+    left:600px;
+}
+header{
+    position:relative;
+    left:1200px;
+    padding:10px;
+}
+#item-select{
+    text-decoration:underline;
+}
