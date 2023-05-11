@@ -22,6 +22,10 @@ a{
     font-size: 30px;
     margin-left: 20px;
 }
+a:hover{
+    text-decoration:underline;
+    color:rgb(255, 165, 0);
+}
 .botoes{
     left:600px;
 }
@@ -29,4 +33,7 @@ header{
     position:relative;
     left:1400px;
     padding:10px;
+}
+#item-select{
+    text-decoration:underline;
 }
