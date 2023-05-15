@@ -7,21 +7,67 @@
     <title>Pink Storm</title>
     <link rel="stylesheet" href="assets/css/estilo.css">
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&family=Poppins:wght@800&display=swap" rel="stylesheet">
     
 </head>
 <body>
+
+    <header>
     <div class="logo">
         <a href="inicio.html"><img src="assets/img/logo.png" alt="Logo" class="media-object  img-responsive img-thumbnail" width="250px"></a>
-    </div>
-    <div class="anuncio">
-        <img src="assets/img/anúncio.png" alt="Anúncio" width="800px">
     </div>
     <div class="bdireita">
         <img src="assets/img/bglhdireita.png" alt="Decoração direita superior" width="450px">
     </div>
-    <div class="menucomp">
-        <img src="assets/img/menucomp.png" alt="menu" width="700px">
+
+    <div class="menutotal">
+        <div class="inicioa">
+            <a href="inicio.html" id="item-select">Início</a>
+        </div>
+        <div class="produtoa">
+            <a href="produtos.html">Produtos</a>
+        </div>
+        <div class="sobrea">
+            <a href="sobre-nos.html">Sobre</a>
+        </div>
+        <div class="ajudaa">
+            <a href="ajuda.html">Ajuda</a>
+        </div>
+    
+    <div class="carrinho">
+        <a href="carrinho.html"><img src="assets/img/carrinho.png" alt="Carrinho" class="media-object  img-responsive img-thumbnail" width="70px"></a>
+    </div>
+
+    <div class="pesquisa">
+        <img src="assets/img/barra de pesquisa.png" alt="Barra de pesquisa" width="700px">
+    </div>
+    <form>
+        <input type="text" id="pesquisa" name="pesquisa" placeholder="O que você procura?">
+    </form>
+    <div class="lupa">
+        <input type="image" name="lupa" id="lupa" img src="assets/img/lupa.png" alt="Lupa" width="43px">
+    </div>
+    <div class="x">
+        <input type="image" name="x" id="x" img src="assets/img/x.png" alt="Lupa" width="25px" onclick="limparInput()"/>
+    </div>
+    <script>
+        function limparInput() {
+            document.getElementById("pesquisa").value = "";
+    }
+    </script>
+    
+    <img class="conta" src="assets/img/minha-conta.png" alt="Minha conta">
+    <div class="msg"><p>Olá, Usuário!<br>Tudo bem?</p></div>
+
+    </div>
+    </header>
+
+    
+
+    <div class="anuncio">
+        <img src="assets/img/anúncio.png" alt="Anúncio" width="800px">
     </div>
     <div class="fone">
         <img src="assets/img/foneimg.png" alt="Fone" width="910px">
@@ -29,46 +75,48 @@
     <div class="besquerda">
         <img src="assets/img/bglhesquerda.png" alt="Decoração esquerda inferior"width="390px">
     </div>
-    <div class="home">
-        <a href="inicio.html"><img src="assets/img/homeb.png" alt="Início" class="media-object  img-responsive img-thumbnail" width="90px"></a>
-    </div>
-    <div class="product">
-        <a href="produtos.html"><img src="assets/img/productb.png" alt="Produtos" class="media-object  img-responsive img-thumbnail" width="120px"></a>
-    </div>
-    <div class="aboutus">
-        <a href="sobre-nos.html"><img src="assets/img/aboutusb.png" alt="Sobre nós" class="media-object  img-responsive img-thumbnail" width="130px"></a>
-    </div>
-    <div class="ajuda">
-        <a href="ajuda.html"><img src="assets/img/ajudab2.png" alt="Ajuda" class="media-object  img-responsive img-thumbnail" width="82px"></a>
-    </div>
-    <div class="valor">
-        <img src="assets/img/valor.png" alt="Valor" width="176px">
-    </div>
-    <div class="verproduto">
-        <img src="assets/img/verproduto.png" alt="Ver produto" width="176px">
-    </div>
 
-    <!--
-    <div class="pesquisa">
-        <img src="assets/img/barra de pesquisa.png" alt="Barra de pesquisa" width="550px">
+    <div class="botaofone">
+        <a href="fone.html"><button type="button">Ver produto</button></a>
+        <button type="button" id="adicionar-carrinho" onclick="playAlert()">Adicionar ao carrinho</button>
+        <div id="alerta-carrinho">Adicionado ao carrinho!</div>
     </div>
-    <form>
-        <input type="text" id="pesquisa" name="pesquisa">
-    </form>
-    <div class="lupa">
-        <input type="image" name="lupa" id="lupa" img src="assets/img/lupa.png" alt="Lupa" width="35px">
-    </div>
-    <div class="x">
-        <input type="image" name="lupa" id="lupa" img src="assets/img/x.png" alt="Lupa" width="25px" onclick="limparInput()"/>
-    </div>
-
     <script>
-        function limparInput() {
-            document.getElementById("pesquisa").value = "";
-    }
+        var button = document.getElementById("adicionar-carrinho");
+        var delay = 2000; // tempo de espera em milissegundos (2 segundos)
+        var canClick = true; // variável de controle para verificar se o botão pode ser clicado
+
+        function playAlert() {
+        if (canClick) {
+        // reproduzir o som de alerta
+        var audio = new Audio('alert.mp3');
+        audio.play();
+    
+        // desativar o botão temporariamente
+        canClick = false;
+        button.disabled = true;
+    
+        // aguardar o tempo de espera antes de reativar o botão
+        setTimeout(function() {
+        canClick = true;
+        button.disabled = false;
+        }, delay);
+        } 
+        }
     </script>
-    -->
+    <script>
+        const btnAdicionarCarrinho = document.getElementById("adicionar-carrinho");
+        const alertaCarrinho = document.getElementById("alerta-carrinho");
 
+        btnAdicionarCarrinho.addEventListener("click", () => {
+        // Lógica para adicionar o item ao carrinho
 
+        alertaCarrinho.style.display = "block";
+
+        setTimeout(() => {
+        alertaCarrinho.style.display = "none";
+        }, 3000);
+        });
+    </script>
 </body>
 </html>

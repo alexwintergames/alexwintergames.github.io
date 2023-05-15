@@ -7,30 +7,67 @@
     <title>Pink Storm</title>
     <link rel="stylesheet" href="assets/css/estilo.css">
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&family=Poppins:wght@800&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <div class="logo">
-        <a href="inicio.html"><img src="assets/img/logo.png" alt="Logo" class="media-object  img-responsive img-thumbnail" width="250px"></a>
-    </div>
-    <div class="bdireita">
-        <img src="assets/img/bglhdireita.png" alt="Decoração direita superior" width="450px">
-    </div>
-    <div class="menucomp">
-        <img src="assets/img/menucomp.png" alt="menu" width="700px">
-    </div>
-    <div class="home2">
-        <a href="inicio.html"><img src="assets/img/homeb2.png" alt="Início" class="media-object  img-responsive img-thumbnail" width="125px"></a>
-    </div>
-    <div class="product">
-        <a href="produtos.html"><img src="assets/img/productb.png" alt="Produtos" class="media-object  img-responsive img-thumbnail" width="120px"></a>
-    </div>
-    <div class="aboutus">
-        <a href="sobre-nos.html"><img src="assets/img/aboutusb.png" alt="Sobre nós" class="media-object  img-responsive img-thumbnail" width="130px"></a>
-    </div>
-    <div class="ajuda">
-        <a href="ajuda.html"><img src="assets/img/ajudab.png" alt="Ajuda" class="media-object  img-responsive img-thumbnail" width="82px"></a>
-    </div>
+
+    <header>
+        <div class="logo">
+            <a href="inicio.html"><img src="assets/img/logo.png" alt="Logo" class="media-object  img-responsive img-thumbnail" width="250px"></a>
+        </div>
+        <div class="bdireita">
+            <img src="assets/img/bglhdireita.png" alt="Decoração direita superior" width="450px">
+        </div>
+    
+        <div class="menutotal">
+            <div class="inicioa">
+                <a href="inicio.html">Início</a>
+            </div>
+            <div class="produtoa">
+                <a href="produtos.html">Produtos</a>
+            </div>
+            <div class="sobrea">
+                <a href="sobre-nos.html">Sobre</a>
+            </div>
+            <div class="ajudaa">
+                <a href="ajuda.html" id="item-select">Ajuda</a>
+            </div>
+        
+        <div class="carrinho">
+            <a href="carrinho.html"><img src="assets/img/carrinho.png" alt="Carrinho" lass="media-object  img-responsive img-thumbnail" width="70px"></a>
+        </div>
+    
+        <div class="carrinho">
+            <a href="carrinho.html"><img src="assets/img/carrinho.png" alt="Carrinho" class="media-object  img-responsive img-thumbnail" width="70px"></a>
+        </div>
+    
+        <div class="pesquisa">
+            <img src="assets/img/barra de pesquisa.png" alt="Barra de pesquisa" width="700px">
+        </div>
+        <form>
+            <input type="text" id="pesquisa" name="pesquisa" placeholder="O que você procura?">
+        </form>
+        <div class="lupa">
+            <input type="image" name="lupa" id="lupa" img src="assets/img/lupa.png" alt="Lupa" width="43px">
+        </div>
+        <div class="x">
+            <input type="image" name="lupa" id="lupa" img src="assets/img/x.png" alt="Lupa" width="25px" onclick="limparInput()"/>
+        </div>
+        <script>
+            function limparInput() {
+                document.getElementById("pesquisa").value = "";
+        }
+        </script>
+        
+        <img class="conta" src="assets/img/minha-conta.png" alt="Minha conta" width="350px">
+        <div class="msg"><p>Olá, Usuário!<br>Tudo bem?</p></div>
+
+        </div>
+        </header>
+
     <div class="vaivir">
         <img src="assets/img/vaivir.png" alt="Ainda vai vir" width="1300px">
     </div>
