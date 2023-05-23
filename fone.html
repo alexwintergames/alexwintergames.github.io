@@ -255,5 +255,28 @@
         });
     }
 </script>
+<script>
+    var button = document.getElementById("adicionar-carrinho");
+    var delay = 2000; // tempo de espera em milissegundos (2 segundos)
+    var canClick = true; // variável de controle para verificar se o botão pode ser clicado
+
+    function playAlert() {
+    if (canClick) {
+    // reproduzir o som de alerta
+    var audio = new Audio('alert.mp3');
+    audio.play();
+
+    // desativar o botão temporariamente
+    canClick = false;
+    button.disabled = true;
+
+    // aguardar o tempo de espera antes de reativar o botão
+    setTimeout(function() {
+    canClick = true;
+    button.disabled = false;
+    }, delay);
+    } 
+    }
+</script>
 </body>
 </html>
