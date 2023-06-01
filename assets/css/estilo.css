@@ -614,3 +614,128 @@ input:focus{
     left:315px;
     cursor: pointer;
 }
+#loginpag{
+    position:relative;
+    top:300px;
+    left:-20px;
+    opacity: 0;
+}
+#cadastre{
+    position:relative;
+    margin-right: 100px;
+    left:100px;
+}
+fieldset{
+    border: solid 3px #FF66C4;
+    border-radius: 20px;
+    width: 36.3%;
+    position:fixed;
+    left:603px;
+    top:200px;
+    height: 57%;
+}
+.logologin{
+    text-align: center;
+}
+.cadastro{
+    position:relative;
+    left:370px;
+    top:-637px;
+    font-size: 20px;
+}
+.login{
+    position:relative;
+    left:25px;
+    top:20px;
+    font-size: 20px;
+}
+input[type="name"]{
+    position: absolute;
+    padding:10.8px;
+    width:240px;
+    border:solid 2px black;
+    border-radius: 25px;
+    font-size:25px;
+}
+input[type="email"]{
+    position: absolute;
+    padding:10.8px;
+    width:240px;
+    border:solid 2px black;
+    border-radius: 25px;
+    font-size:25px;
+}
+input[type="password"]{
+    position: absolute;
+    padding:10.8px;
+    width:240px;
+    border:solid 2px black;
+    border-radius: 25px;
+    font-size:25px;
+}
+.custom-checkbox{
+    position:relative;
+    top:40px;
+}
+.custom-checkbox input[type="checkbox"] {
+    display: none;
+  }
+
+  .custom-checkbox label {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    user-select: none; /* Impede a seleção do texto */
+  }
+
+  .custom-checkbox label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+  }
+
+  .custom-checkbox input[type="checkbox"]:checked + label::before {
+    background-color: white;
+  }
+
+  /* Estilo do marcador (checkmark) */
+  .custom-checkbox input[type="checkbox"]:checked + label::before {
+    content: "\2713";
+    color: black;
+    text-align: center;
+    line-height: 20px;
+  }
+
+  /* Ativar eventos de clique no texto */
+  .custom-checkbox input[type="checkbox"]:checked + label {
+    pointer-events: auto;
+  }
+button[type="login"]{
+    position:relative;
+    top:50px;
+    font-size:25px;
+    padding:10px;
+    color:white;
+    background-color: #FF66C4;
+    width:270px;
+}
+.divraio{
+    position:relative;
+    top:-273px;
+    left:317px;
+}
+.cadastre-se{
+    position:relative;
+    top:20px;
+}
+.esqueceu{
+    position:relative;
+    top:40px;
+    cursor: pointer;
+}
+
