@@ -102,10 +102,10 @@
                 <label for="meuCheckbox"><strong>Lembre-se de mim</strong></label>
             </div>
             <div class="acessar">
-                <button type="login">Acessar</button>
+                <button type="login" onclick="alerta1()">Acessar</button>
             </div>
             <div class="esqueceu">
-                <strong><p>Esqueceu-se da senha?</p></strong>
+                <strong><p onclick="alerta1()">Esqueceu-se da senha?</p></strong>
             </div>
         </div>
 
@@ -127,11 +127,16 @@
                 <br>
             <input type="email" id="emailll" placeholder="E-mail">
             <div class="cadastre-se">
-                <button type="login" id="cadastrarsee">Cadastrar-se</button>
+                <button type="login" id="cadastrarsee" onclick="alerta1()">Cadastrar-se</button>
             </div>
         </div>
 
     </fieldset>
 
+    <script>
+        function alerta1(){
+            alert("Ainda está em desenvolvimento");
+        }
+    </script>
 </body>
 </html>
