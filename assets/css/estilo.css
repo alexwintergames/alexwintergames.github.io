@@ -809,3 +809,10 @@ button[type="login"]{
     left:1210px;
     font-size: 75px;
 }
+#emailll{
+    position:absolute;
+    top:214px;
+}
+#cadastrarsee{
+    position:absolute;
+}
