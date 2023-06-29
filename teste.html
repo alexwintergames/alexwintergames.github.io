@@ -1,58 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Botões de cores estilizados</title>
+	<title>Orçamento</title>
 	<link rel="stylesheet" href="assets/css/estilo.css">
 </head>
 <body>
-	<button class="rosa-button" onclick="toggleFavorite(this)">
-		<img src="assets/img/rosa.png" alt="Rosa parcial" class="rosa-parcial">
-		<img src="assets/img/rosa2.png" alt="Rosa completo" class="rosa-completo">
-	</button>
-	<button class="preto-button" onclick="toggleFavorite(this)">
-		<img src="assets/img/preto.png" alt="Preto parcial" class="preto-parcial">
-		<img src="assets/img/preto2.png" alt="Preto completo" class="preto-completo">
-	</button>
-	<button class="azul-button" onclick="toggleFavorite(this)">
-		<img src="assets/img/azul.png" alt="Azul parcial" class="azul-parcial">
-		<img src="assets/img/azul2.png" alt="Azul completo" class="azul-completo">
-	</button>
-	<button class="branco-button" onclick="toggleFavorite(this)">
-		<img src="assets/img/branco.png" alt="Branco parcial" class="branco-parcial">
-		<img src="assets/img/branco2.png" alt="Branco completo" class="branco-completo">
-	</button>
-	<button class="vermelho-button" onclick="toggleFavorite(this)">
-		<img src="assets/img/vermelho.png" alt="Vermelho parcial" class="vermelho-parcial">
-		<img src="assets/img/vermelho2.png" alt="Vermelho completo" class="vermelho-completo">
-	</button>
+	
 
-	<script>
-		function toggleFavorite(button) {
-			var buttons = document.querySelectorAll(".rosa-button, .preto-button, .azul-button, .branco-button, .vermelho-button");
 
-			buttons.forEach(function(btn) {
-				if (btn === button) {
-					var parcial = btn.querySelector(".rosa-parcial, .preto-parcial, .azul-parcial, .branco-parcial, .vermelho-parcial");
-					var completo = btn.querySelector(".rosa-completo, .preto-completo, .azul-completo, .branco-completo, .vermelho-completo");
 
-					if (btn.classList.contains("favorited")) {
-						btn.classList.remove("favorited");
-						parcial.style.display = "inline-block";
-						completo.style.display = "none";
-					} else {
-						btn.classList.add("favorited");
-						parcial.style.display = "none";
-						completo.style.display = "inline-block";
-					}
-				} else {
-					btn.classList.remove("favorited");
-					var parcial = btn.querySelector(".rosa-parcial, .preto-parcial, .azul-parcial, .branco-parcial, .vermelho-parcial");
-					var completo = btn.querySelector(".rosa-completo, .preto-completo, .azul-completo, .branco-completo, .vermelho-completo");
-					parcial.style.display = "inline-block";
-					completo.style.display = "none";
-				}
-			});
-		}
-	</script>
+	<h1 id="nome-usuario">Processador Intel Core i5 - R$375,90</h1>
+	<div class="quantidadel">
+        <div class="qntdt2"><label><strong>Quantidade:</strong></label></div>
+        <input type="text" id="quantity2" value="1" readonly>
+	    <button id="decrease2" onclick="menos()"><img src="assets/img/menos.png" alt="Menos" width="25px"></button>
+	    <button id="increase2" onclick="mais()"><img src="assets/img/mais.png" alt="Mais" width="20px"></button>
+        </div>
+
+	<script src="assets/js/teste.js"></script>
 </body>
 </html>

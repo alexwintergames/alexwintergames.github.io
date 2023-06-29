@@ -58,7 +58,12 @@
         </script>
 
         <img class="conta" src="assets/img/minha-conta.png" alt="Minha conta" width="350px">
-        <div class="msg"><p>Olá, Usuário!<br>Tudo bem?</p></div>
+        <div class="msg" onclick="abrirPagina()"><p>Olá, Usuário!<br>Tudo bem?</p></div>
+        <script>
+        function abrirPagina(){
+            window.location.href = "login-e-cadastro.html";
+        }
+        </script>
     
         </div>
         </header>
@@ -119,6 +124,9 @@
         <div class="frete"><img src="assets/img/frete.png" alt="Frete" width="650px"></div>
         <div class="cores"><img src="assets/img/cores.png" alt="Cores" width="700px"></div>
 
+        <h1 id="nome-usuario">R$189.90</h1>
+        <h1 id="nome-usuario2">R$159.90</h1>
+
         <div class="quantidadel">
         <div class="qntdt"><label><strong>Quantidade:</strong></label></div>
         <input type="text" id="quantity" value="1" readonly>
@@ -145,33 +153,6 @@
             }, 3000);
             });
         </script>
-
-	<script>
-		// obtém os elementos do DOM
-		var decreaseButton = document.getElementById("decrease");
-		var increaseButton = document.getElementById("increase");
-		var quantityInput = document.getElementById("quantity");
-
-		// adiciona evento de clique para o botão de diminuir
-		decreaseButton.addEventListener("click", function() {
-			// obtém o valor atual
-			var currentValue = parseInt(quantityInput.value);
-
-			// diminui o valor se for maior ou igual a 2
-			if (currentValue >= 2) {
-				quantityInput.value = currentValue - 1;
-			}
-		});
-
-		// adiciona evento de clique para o botão de aumentar
-		increaseButton.addEventListener("click", function() {
-			// obtém o valor atual
-			var currentValue = parseInt(quantityInput.value);
-
-			// aumenta o valor
-			quantityInput.value = currentValue + 1;
-		});
-	    </script>
 
         <script>
             const imagens = document.querySelectorAll('.carousel img');
@@ -279,5 +260,6 @@
     } 
     }
 </script>
+<script src="assets/js/calculofone.js"></script>
 </body>
 </html>

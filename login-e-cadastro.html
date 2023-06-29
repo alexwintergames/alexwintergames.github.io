@@ -10,7 +10,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&family=Poppins:wght@800&display=swap" rel="stylesheet">
-    
+    <!--
+    <script>
+        function mostrarSenha(){
+            var senhaInput = document.getElementById("senha");
+
+            if (senhaInput.type === "password"){
+                senhaInput.type = "text";
+            } else {
+                senhaInput.type = "password";
+            }
+        }
+    </script>
+    -->
 </head>
 <body>
 
@@ -59,7 +71,12 @@
     </script>
     
     <img class="conta" src="assets/img/minha-conta.png" alt="Minha conta">
-    <div class="msg"><p>Olá, Usuário!<br>Tudo bem?</p></div>
+    <div class="msg" onclick="abrirPagina()"><p>Olá, Usuário!<br>Tudo bem?</p></div>
+    <script>
+        function abrirPagina(){
+            window.location.href = "login-e-cadastro.html";
+        }
+    </script>
 
     </div>
     </header>
@@ -70,14 +87,15 @@
         <div class="logologin">
             <img src="assets/img/logo1.png" alt="Logo" width="300px">
         </div>
-
         <div class="login">
             <h1>FAÇA LOGIN</h1>
             <input type="name" placeholder="Nome de usuário">
                 <br>
                 <br>
                 <br>
-            <input type="password" placeholder="Senha">
+            <input type="password" id="senha" placeholder="Senha">
+            <!--<div id="olho" onclick="mostrarSenha()"><img src="assets/img/olho-aberto.jpg" width="50px" alt="Olho"></div>-->
+            
             <br>
             <div class="custom-checkbox">
                 <input type="checkbox" id="meuCheckbox" name="meuCheckbox">
@@ -90,6 +108,8 @@
                 <strong><p>Esqueceu-se da senha?</p></strong>
             </div>
         </div>
+
+        
 
         <div class="divraio">
             <img src="assets/img/divraio.png" alt="Divisória com raio" width="33px">
