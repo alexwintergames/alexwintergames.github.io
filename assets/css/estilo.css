@@ -33,8 +33,8 @@ header{
 }
 .anuncio{
     position:absolute;
-    top:300px;
-    left:40px;
+    top:303px;
+    left:38px;
 }
 .bdireita{
     position:absolute;
@@ -190,11 +190,11 @@ a{
 }
 a:hover{
     text-decoration: underline 5px;
-    color:#FF66C4;
+    color:#F80000;
 }
 #item-select{
     text-decoration: underline 5px;
-    color:#FF66C4;
+    color:#F80000;
 }
 .botaofone{
     position: fixed;
@@ -212,7 +212,7 @@ button{
     margin-right: 13px;
 }
 button:hover{
-    background-color: #FF66C4;
+    background-color: #F80000;
     cursor: pointer;
     color:white;
     -ms-transform: scale(1.3);
@@ -354,7 +354,7 @@ input:focus{
     color: rgb(0, 0, 0);
     border-radius: 5px;
     z-index: 999;
-    border: 3px solid #FF66C4;
+    border: 3px solid #F80000;
     font-size: 25px;
 }
 .compartilhar{
@@ -440,7 +440,7 @@ input:focus{
     padding-top:6px;
     padding-left:20px;
     padding-right:20px;
-    border: #FF66C4 2px solid;
+    border: #F80000 2px solid;
 }
 #increase:hover{
     background-color: white;
@@ -451,7 +451,7 @@ input:focus{
     position:fixed;
     width:120px;
     text-align:center;
-    border: #FF66C4 2px solid;
+    border: #F80000 2px solid;
     border-radius: 15px;
     top:773px;
     left: 1240px;
@@ -467,7 +467,7 @@ input:focus{
     padding-bottom:5px;
     padding-left:15px;
     padding-right:15px;
-    border: #FF66C4 2px solid;
+    border: #F80000 2px solid;
 }
 #decrease:hover{
     background-color: white;
@@ -627,7 +627,7 @@ input:focus{
     left:100px;
 }
 fieldset{
-    border: solid 3px #FF66C4;
+    border: solid 3px #F80000;
     border-radius: 20px;
     width: 36.3%;
     position:fixed;
@@ -722,7 +722,7 @@ button[type="login"]{
     font-size:25px;
     padding:10px;
     color:white;
-    background-color: #FF66C4;
+    background-color: #F80000;
     width:270px;
 }
 .divraio{
@@ -760,7 +760,7 @@ button[type="login"]{
     padding-top:6px;
     padding-left:20px;
     padding-right:20px;
-    border: #FF66C4 2px solid;
+    border: #F80000 2px solid;
 }
 #increase2:hover{
     background-color: white;
@@ -771,7 +771,7 @@ button[type="login"]{
     position:fixed;
     width:120px;
     text-align:center;
-    border: #FF66C4 2px solid;
+    border: #F80000 2px solid;
     border-radius: 15px;
     top:73px;
     left: 240px;
@@ -787,7 +787,7 @@ button[type="login"]{
     padding-bottom:5px;
     padding-left:15px;
     padding-right:15px;
-    border: #FF66C4 2px solid;
+    border: #F80000 2px solid;
 }
 #decrease2:hover{
     background-color: white;
