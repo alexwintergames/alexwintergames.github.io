@@ -122,7 +122,6 @@
         <div class="estrela"><img src="assets/img/5stars.png" alt="5 Estrelas" width="230px"></div>
         <div class="preco"><img src="assets/img/precodesc.png" alt="Preço com desconto" width="700px"></div>
         <div class="frete"><img src="assets/img/frete.png" alt="Frete" width="650px"></div>
-        <div class="cores"><img src="assets/img/cores.png" alt="Cores" width="700px"></div>
 
         <h1 id="nome-usuario">R$349.90</h1>
         <h1 id="nome-usuario2">R$299.90</h1>
@@ -187,55 +186,6 @@
             
         </script>
 
-        <button class="rosa-button" onclick="toggleFavorite(this)">
-            <img src="assets/img/rosa.png" alt="Rosa parcial" class="rosa-parcial">
-            <img src="assets/img/rosa2.png" alt="Rosa completo" class="rosa-completo">
-        </button>
-        <button class="preto-button" onclick="toggleFavorite(this)">
-            <img src="assets/img/preto.png" alt="Preto parcial" class="preto-parcial">
-            <img src="assets/img/preto2.png" alt="Preto completo" class="preto-completo">
-        </button>
-        <button class="azul-button" onclick="toggleFavorite(this)">
-            <img src="assets/img/azul.png" alt="Azul parcial" class="azul-parcial">
-            <img src="assets/img/azul2.png" alt="Azul completo" class="azul-completo">
-        </button>
-        <button class="branco-button" onclick="toggleFavorite(this)">
-            <img src="assets/img/branco.png" alt="Branco parcial" class="branco-parcial">
-            <img src="assets/img/branco2.png" alt="Branco completo" class="branco-completo">
-        </button>
-        <button class="vermelho-button" onclick="toggleFavorite(this)">
-            <img src="assets/img/vermelho.png" alt="Vermelho parcial" class="vermelho-parcial">
-            <img src="assets/img/vermelho2.png" alt="Vermelho completo" class="vermelho-completo">
-        </button>
-
-<script>
-    function toggleFavorite(button) {
-        var buttons = document.querySelectorAll(".rosa-button, .preto-button, .azul-button, .branco-button, .vermelho-button");
-
-        buttons.forEach(function(btn) {
-            if (btn === button) {
-                var parcial = btn.querySelector(".rosa-parcial, .preto-parcial, .azul-parcial, .branco-parcial, .vermelho-parcial");
-                var completo = btn.querySelector(".rosa-completo, .preto-completo, .azul-completo, .branco-completo, .vermelho-completo");
-
-                if (btn.classList.contains("favorited")) {
-                    btn.classList.remove("favorited");
-                    parcial.style.display = "inline-block";
-                    completo.style.display = "none";
-                } else {
-                    btn.classList.add("favorited");
-                    parcial.style.display = "none";
-                    completo.style.display = "inline-block";
-                }
-            } else {
-                btn.classList.remove("favorited");
-                var parcial = btn.querySelector(".rosa-parcial, .preto-parcial, .azul-parcial, .branco-parcial, .vermelho-parcial");
-                var completo = btn.querySelector(".rosa-completo, .preto-completo, .azul-completo, .branco-completo, .vermelho-completo");
-                parcial.style.display = "inline-block";
-                completo.style.display = "none";
-            }
-        });
-    }
-</script>
 <script>
     var button = document.getElementById("adicionar-carrinho2");
     var delay = 2000; // tempo de espera em milissegundos (2 segundos)
