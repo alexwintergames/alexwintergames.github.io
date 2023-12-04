@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Storm</title>
+    <link rel="stylesheet" href="assets/css/estilo-ajuda.css">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&family=Poppins:wght@800&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <header>
+        <div id="vermelho">
+            <p></p>
+        </div>
+        <div class="logo">
+            <a href="inicio.html"><img src="assets/img/logo.png" alt="Logo" class="media-object  img-responsive img-thumbnail" width="250px"></a>
+        </div>
+        <div class="bdireita">
+            <img src="assets/img/bglhdireita.png" alt="Decoração direita superior" width="450px">
+        </div>
+    
+        <div class="menutotal">
+            <div class="inicioa">
+                <a href="inicio.html">Início</a>
+            </div>
+            <div class="produtoa">
+                <a href="produtos.html">Produtos</a>
+            </div>
+            <div class="sobrea">
+                <a href="sobre-nos.html">Sobre</a>
+            </div>
+            <div class="ajudaa">
+                <a href="ajuda.html" id="item-select">Ajuda</a>
+            </div>
+        
+            <div class="carrinho">
+                <a href="carrinho.html"><img src="assets/img/carrinho.png" alt="Carrinho" class="media-object  img-responsive img-thumbnail" width="70px"></a>
+            </div>
+    
+        <div class="pesquisa">
+            <img src="assets/img/barra de pesquisa.png" alt="Barra de pesquisa" width="700px">
+        </div>
+
+        <form>
+            <input type="text" id="pesquisa1" name="pesquisa" placeholder="O que você procura?">
+        </form>
+
+        <div class="lupa1">
+            <input type="image" name="lupa" id="lupa1" img src="assets/img/lupa.png" alt="Lupa" width="43px">
+        </div>
+        <div class="x">
+            <input type="image" name="lupa" id="resposta " img src="assets/img/x.png" alt="Lupa" width="25px" onclick="limparInput()"/>
+        </div>
+
+        <div id="escrita">
+            <h1>Olá, como podemos ajudar?</h1>
+        </div>
+        <div id="button1">
+            <button>O que é Tech Storm?</button>
+        </div>
+    
+        <div id="button2">
+            <button>O que é periféricos?</button>
+        </div>
+    
+        <div id="button3">
+            <button>Sua conta</button>
+        </div>
+    
+        <div id="button4">
+            <button>Devoluções ou reembolso</button>
+        </div>
+    
+        <div id="buttonContainer">
+            <div id="button5">
+                <button>Como faço uma compra?</button>
+            </div>
+    
+            <div id="button6">
+                <button>Denunciar algo suspeito</button>
+            </div>
+    
+            <div id="button7">
+                <button>Gerenciar seu Endereço</button>
+            </div>
+    
+            <div id="button8">
+                <button>Rastreie seu PC</button>
+            </div>
+        </div>
+        <div id="escrita2">
+            <h2>Perguntas Frequentes</h2>
+        </div>
+        <div id="linha1">
+            <img src="assets/img/Linha.png" alt="linha">
+        </div>
+        <div id="escrita3">
+            <a href="">[Devoluções e Reembolso] Como faço para solicitar uma devolução/reembolso?</a>
+        </div>
+        <div id="linha2">
+            <img src="assets/img/Linha.png" alt="linha">
+        </div>
+        <div id="escrita4">
+            <a href="#">[Devoluções e Reembolso] O que acontece depois que um vendedor recebe minha solicitação devolução / reembolso?</a>
+        </div>
+        <div id="linha3">
+            <img src="assets/img/Linha.png" alt="linha">
+        </div>
+        <div id="escrita5">
+            <a href="#">[Retorno e Reembolso] O que devo fazer se não receber um pedido, mas o status está como entregue?</a>
+        </div>
+        <div id="linha4">
+            <img src="assets/img/Linha.png" alt="linha">
+        </div>
+        <div id="escrita6">
+            <a href="#">[Segurança do pedido] O que é a Garantia Tech Storm</a>
+        </div>
+        <div id="linha5">
+            <img src="assets/img/Linha.png" alt="linha">
+        </div>
+        <div id="escrita7">
+            <a href="#">[Retorno & Reembolso] Como obtenho um reembolso por pagamento feito via Pix?</a>
+        </div>
+        <div id="linha6">
+            <img src="assets/img/Linha.png" alt="linha">
+        </div>
+        <div id="escrita8">
+            <a href="#">[Retorno & Reembolso] Como faço para obter o reembolso do pagamento feito via Boleto Bancário?</a>
+        </div>
+        <div id="linha7">
+            <img src="assets/img/Linha.png" alt="linha">
+        </div>
+        <script>
+            function limparInput() {
+                document.getElementById("pesquisa1").value = "";
+        }
+        </script>
+        
+        <img class="conta" src="assets/img/minha-conta.png" alt="Minha conta" width="350px">
+        <div class="msg" onclick="abrirPagina()"><p>Olá, Usuário!<br>Tudo bem?</p></div>
+        <script>
+        function abrirPagina(){
+            window.location.href = "login-e-cadastro.html";
+              
+        }
+        </script>
+
+        </div>
+        </header>
+        <footer>
+            <p id="faleconosco">
+                Fale Direto conosco
+                <a href="TechStorm@gmail.com" id="email">TechStorm@gmail.com</a>
+            </p>
+            <div class="icone-email">✉</div>
+        </footer>
+        
+        
+
+   
+</body>
+</html>
