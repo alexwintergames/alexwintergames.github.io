@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pink Storm</title>
+    <title>Tech Storm</title>
     <link rel="stylesheet" href="assets/css/estilo.css">
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -92,10 +92,6 @@
         var canClick = true; // variável de controle para verificar se o botão pode ser clicado
 
         function playAlert() {
-        if (canClick) {
-        // reproduzir o som de alerta
-        var audio = new Audio('alert.mp3');
-        audio.play();
     
         // desativar o botão temporariamente
         canClick = false;
@@ -105,8 +101,7 @@
         setTimeout(function() {
         canClick = true;
         button.disabled = false;
-        }, delay);
-        } 
+        }, delay);  
         }
     </script>
     <script>

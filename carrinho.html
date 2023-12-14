@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pink Storm</title>
+    <title>Tech Storm</title>
     <link rel="stylesheet" href="assets/css/estilo.css">
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&family=Poppins:wght@800&display=swap" rel="stylesheet">
-    
+
 </head>
 <body>
 
@@ -56,6 +56,9 @@
         <div class="x">
             <input type="image" name="lupa" id="lupa" img src="assets/img/x.png" alt="Lupa" width="25px" onclick="limparInput()"/>
         </div>
+        <div class="besquerda">
+            <img src="assets/img/bglhesquerda.png" alt="Decoração esquerda inferior"width="390px">
+        </div>
         <script>
             function limparInput() {
                 document.getElementById("pesquisa").value = "";
@@ -73,8 +76,61 @@
         </div>
         </header>
 
-    <div class="vaivir">
-        <img src="assets/img/vaivir.png" alt="Ainda vai vir" width="1300px">
-    </div>
+        <div class="titulocarrinho">MEU CARRINHO</div>
+        <div class="fonecarrinho"><img src="assets/img/fonecarrinho.png" alt=""></div>
+        <div class="pagamento"><img src="assets/img/pagamento.png" alt=""></div>
+        <div class="cupom"><img src="assets/img/cupom.png" alt=""></div>
+
+        
+        <div class="quantidadel">
+            <input type="text" id="quantity2" value="1" readonly>
+            <button id="decrease2"><img src="assets/img/menosflecha.png" alt="Menos" width="25px"></button>
+            <button id="increase2"><img src="assets/img/maisflecha.png" alt="Mais" width="25px"></button>
+            </div>
+
+            <h1 id="nome-usuario3">R$159.90</h1>
+            <h1 id="nome-usuario4">R$159.90</h1>
+
+            <input type="text" name="cupom" id="cupom" alt="Lupa" placeholder="Código de cupom">
+
+            <div class="botaofone">
+                <button type="button" id="adicionar-carrinho3" onclick="playAlert()">APLICAR CUPOM</button>
+                <div id="alerta-carrinho2">Cupom aplicado!</div>
+            </div>
+            <script>
+                var button = document.getElementById("adicionar-carrinho3");
+                var delay = 2000; // tempo de espera em milissegundos (2 segundos)
+                var canClick = true; // variável de controle para verificar se o botão pode ser clicado
+        
+                function playAlert() {
+            
+                // desativar o botão temporariamente
+                canClick = false;
+                button.disabled = true;
+            
+                // aguardar o tempo de espera antes de reativar o botão
+                setTimeout(function() {
+                canClick = true;
+                button.disabled = false;
+                }, delay);  
+                }
+            </script>
+            <script>
+                const btnAdicionarCarrinho = document.getElementById("adicionar-carrinho3");
+                const alertaCarrinho = document.getElementById("alerta-carrinho2");
+        
+                btnAdicionarCarrinho.addEventListener("click", () => {
+                // Lógica para adicionar o item ao carrinho
+        
+                alertaCarrinho.style.display = "block";
+        
+                setTimeout(() => {
+                alertaCarrinho.style.display = "none";
+                }, 99999999999);
+                });
+            </script>
+        
+
+        <script src="assets/js/calculocarrinho.js"></script>
 </body>
 </html>

@@ -4,17 +4,122 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pink Storm</title>
+    <title>Tech Storm</title>
     <link rel="stylesheet" href="assets/css/estilo.css">
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&family=Poppins:wght@800&display=swap" rel="stylesheet">
 
+    <style>
+		#caixa {
+            display: flex;
+            width: 1740px;
+            height: 300px;
+            position: absolute;
+            top: 380px;
+            left:100px;
+            overflow-x: auto;
+        }
+        #caixa::-webkit-scrollbar{
+            width: 10px;
+            height: 10px;
+            border: 0.5px solid black;
+            border-radius: 6px;
+        }
+        #caixa::-webkit-scrollbar-thumb{
+            background-color: #F80000;
+            border-radius: 6px;
+        }
+		#caixa div{
+            max-width: 400px;
+			flex: 0 0 auto;
+            margin-right: 90px;
+		}
+        #caixa div:last-child{
+            margin-right: 0px;
+        }
+        #caixa div img {
+            height: auto;
+        }
+        .bproduto2{
+            position:absolute;
+            top:185px;
+            width:200px;
+            margin-left:-380px;
+            transition: 0.3s;
+        }
+        .bproduto2:hover{
+            -ms-transform: scale(1.1);
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+        #caixa2 {
+            display: flex;
+            width: 1740px;
+            height: 300px;
+            position: absolute;
+            top: 830px;
+            left:100px;
+            overflow-x: auto;
+        }
+        #caixa2::-webkit-scrollbar{
+            width: 10px;
+            height: 10px;
+            border: 0.5px solid black;
+            border-radius: 6px;
+        }
+        #caixa2::-webkit-scrollbar-thumb{
+            background-color: #F80000;
+            border-radius: 6px;
+        }
+		#caixa2 div{
+            max-width: 400px;
+			flex: 0 0 auto;
+            margin-right: 90px;
+		}
+        #caixa2 div:last-child{
+            margin-right: 0px;
+        }
+        #caixa2 div img {
+            height: auto;
+        }
+        #caixa3 {
+            display: flex;
+            width: 1740px;
+            height: 300px;
+            position: absolute;
+            top: 1280px;
+            left:100px;
+            overflow-x: auto;
+        }
+        #caixa3::-webkit-scrollbar{
+            width: 10px;
+            height: 10px;
+            border: 0.5px solid black;
+            border-radius: 6px;
+        }
+        #caixa3::-webkit-scrollbar-thumb{
+            background-color: #F80000;
+            border-radius: 6px;
+        }
+		#caixa3 div{
+            max-width: 400px;
+			flex: 0 0 auto;
+            margin-right: 90px;
+		}
+        #caixa3 div:last-child{
+            margin-right: 0px;
+        }
+        #caixa3 div img {
+            height: auto;
+        }
+	</style>
+
 </head>
 <body>
 
-    <header>
+    <header id="cabecalho">
         <div class="logo">
             <a href="inicio.html"><img src="assets/img/logo.png" alt="Logo" class="media-object  img-responsive img-thumbnail" width="250px"></a>
         </div>
@@ -73,21 +178,102 @@
     </div>
     </header>
 
-    <div class="besquerda">
-        <img src="assets/img/bglhesquerda.png" alt="Decoração esquerda inferior"width="390px">
-    </div>
     <div class="linha">
-        <img src="assets/img/linha rosa.png" alt="Linha decorativa" width="24px">
+        <img src="assets/img/linha rosa.png" alt="Linha decorativa" width="16px">
     </div>
     <div class="fonesh">
         <img src="assets/img/fonesh.png" alt="Categoria Fones">
     </div>
-    <div class="produto1">
-        <img src="assets/img/produto1.png" alt="1° Produto" width="600px">
+
+    <div id="caixa">
+        <div>
+            <img src="assets/img/produto1.png" alt="1° Produto" width="100%" height="auto">
+            <a href="fone.html"><img class="bproduto2" src="assets/img/bcompra.png" width="100px"></a>
+        </div>
+        <div>
+            <img src="assets/img/produto1.png" alt="1° Produto" width="100%" height="auto">
+            <a href="fone.html"><img class="bproduto2" src="assets/img/bcompra.png"></a>
+        </div>
+        <div>
+            <img src="assets/img/produto1.png" alt="1° Produto" width="100%" height="auto">
+            <a href="fone.html"><img class="bproduto2" src="assets/img/bcompra.png"></a>
+        </div>
+        <div>
+            <img src="assets/img/produto1.png" alt="1° Produto" width="100%" height="auto">
+            <a href="fone.html"><img class="bproduto2" src="assets/img/bcompra.png" width="100px"></a>
+        </div>
+        <div>
+            <img src="assets/img/produto1.png" alt="1° Produto" width="100%" height="auto">
+            <a href="fone.html"><img class="bproduto2" src="assets/img/bcompra.png"></a>
+        </div>
     </div>
+<<<<<<< HEAD
     <a href="fone.html"><img class="bproduto1" src="assets/img/bcompra.png"></a>
 
     
+=======
+
+    <div class="mouse">
+        <img src="assets/img/mouse.png" alt="" width="170px">
+    </div>
+    <div class="linha2">
+        <img src="assets/img/linha rosa.png" alt="" width="16px">
+    </div>
+
+    <div id="caixa2">
+        <div>
+            <img src="assets/img/mouseproduto.png" alt="1° Produto" width="100%" height="auto">
+            <a href="mouse.html"><img class="bproduto2" src="assets/img/bcompra.png" width="100px"></a>
+        </div>
+        <div>
+            <img src="assets/img/mouseproduto2.png" alt="1° Produto" width="100%" height="auto">
+            <a href="mouse2.html"><img class="bproduto2" src="assets/img/bcompra.png"></a>
+        </div>
+        <div>
+            <img src="assets/img/mouseproduto3.png" alt="1° Produto" width="100%" height="auto">
+            <a href="mouse3.html"><img class="bproduto2" src="assets/img/bcompra.png"></a>
+        </div>
+        <div>
+            <img src="assets/img/mouseproduto4.png" alt="1° Produto" width="100%" height="auto">
+            <a href="mouse4.html"><img class="bproduto2" src="assets/img/bcompra.png" width="100px"></a>
+        </div>
+        <div>
+            <img src="assets/img/mouseproduto5.png" alt="1° Produto" width="100%" height="auto">
+            <a href="mouse5.html"><img class="bproduto2" src="assets/img/bcompra.png"></a>
+        </div>
+    </div>
+
+    <div class="teclado">
+        <img src="assets/img/teclado.png" alt="" width="210px">
+    </div>
+    <div class="linha3">
+        <img src="assets/img/linha rosa.png" alt="" width="16px">
+    </div>
+
+    <div id="caixa3">
+        <div>
+            <img src="assets/img/tecladoproduto.png" alt="1° Produto" width="100%" height="auto">
+            <a href="teclado.html"><img class="bproduto2" src="assets/img/bcompra.png" width="100px"></a>
+        </div>
+        <div>
+            <img src="assets/img/tecladoproduto.png" alt="1° Produto" width="100%" height="auto">
+            <a href="teclado.html"><img class="bproduto2" src="assets/img/bcompra.png"></a>
+        </div>
+        <div>
+            <img src="assets/img/tecladoproduto.png" alt="1° Produto" width="100%" height="auto">
+            <a href="teclado.html"><img class="bproduto2" src="assets/img/bcompra.png"></a>
+        </div>
+        <div>
+            <img src="assets/img/tecladoproduto.png" alt="1° Produto" width="100%" height="auto">
+            <a href="teclado.html"><img class="bproduto2" src="assets/img/bcompra.png" width="100px"></a>
+        </div>
+        <div>
+            <img src="assets/img/tecladoproduto.png" alt="1° Produto" width="100%" height="auto">
+            <a href="teclado.html"><img class="bproduto2" src="assets/img/bcompra.png"></a>
+        </div>
+    </div>
+
+>>>>>>> 7aa2056148f213416d50ddbdee257ea8ae55df87
 </body>
 </html>
 

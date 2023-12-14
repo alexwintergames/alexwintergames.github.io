@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Storm</title>
+    <link rel="stylesheet" href="assets/css/estilo.css">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&family=Poppins:wght@800&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="inicio.html"><img src="assets/img/logo.png" alt="Logo" class="media-object  img-responsive img-thumbnail" width="250px"></a>
+        </div>
+        <div class="bdireita">
+            <img src="assets/img/bglhdireita.png" alt="Decoração direita superior" width="450px">
+        </div>
+    
+        <div class="menutotal">
+            <div class="inicioa">
+                <a href="inicio.html">Início</a>
+            </div>
+            <div class="produtoa">
+                <a href="produtos.html">Produtos</a>
+            </div>
+            <div class="sobrea">
+                <a href="sobre-nos.html">Sobre</a>
+            </div>
+            <div class="ajudaa">
+                <a href="ajuda.html">Ajuda</a>
+            </div>
+        
+        <div class="carrinho">
+            <a href="carrinho.html"><img src="assets/img/carrinho.png" alt="Carrinho" lass="media-object  img-responsive img-thumbnail" width="70px"></a>
+        </div>
+        <div class="pesquisa">
+            <img src="assets/img/barra de pesquisa.png" alt="Barra de pesquisa" width="700px">
+        </div>
+        <form>
+            <input type="text" id="pesquisa" name="pesquisa" placeholder="O que você procura?">
+        </form>
+        <div class="lupa">
+            <input type="image" name="lupa" id="lupa" img src="assets/img/lupa.png" alt="Lupa" width="43px">
+        </div>
+        <div class="x">
+            <input type="image" name="lupa" id="lupa" img src="assets/img/x.png" alt="Lupa" width="25px" onclick="limparInput()"/>
+        </div>
+        <script>
+            function limparInput() {
+                document.getElementById("pesquisa").value = "";
+        }
+        </script>
+
+        <img class="conta" src="assets/img/minha-conta.png" alt="Minha conta" width="350px">
+        <div class="msg" onclick="abrirPagina()"><p>Olá, Usuário!<br>Tudo bem?</p></div>
+        <script>
+        function abrirPagina(){
+            window.location.href = "login-e-cadastro.html";
+        }
+        </script>
+    
+        </div>
+        </header>
+
+        <div class="carousel">
+            <img src="assets/img/3mouse1.png" id="termouse1" alt="Fone Rosa" width="380px">
+            <img src="assets/img/3mouse2.png" id="mouse2" alt="Fone Rosa" width="400px">
+            <img src="assets/img/3mouse3.png" id="termouse3" alt="Fone Rosa" width="400px">
+            <img src="assets/img/3mouse4.png" id="termouse4" alt="Fone Rosa" width="270px">
+            <img src="assets/img/3mouse5.png" id="termouse5" alt="Fone Rosa" width="170px">
+        </div>
+        <div class="carousel2">
+            <img src="assets/img/3menumouse1.png" alt="Fone Rosa" width="570px">
+            <img src="assets/img/3menumouse2.png" alt="Fone Rosa" width="570px">
+            <img src="assets/img/3menumouse3.png" alt="Fone Rosa" width="570px">
+            <img src="assets/img/3menumouse4.png" alt="Fone Rosa" width="570px">
+            <img src="assets/img/3menumouse5.png" alt="Fone Rosa" width="570px">
+        </div>
+        <button id="anterior"><img src="assets/img/esquerda.png" width="30px"></button>
+        <button id="proximo"><img src="assets/img/direita.png" width="34px"></button>
+
+        <div class="compartilhar"><p>Compartilhar:</p></div>
+        <div class="compartilhamentos">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=alexwintergames.github.io" target="_blank"><img src="assets/img/facebook.png" alt="Compartilhar no facebook" width="50px"></a>
+            <a href="https://www.pinterest.com/pin/create/button/?url=alexwintergames.github.io&description=Olhe só este incrível site sobre venda de periféricos que achei!" target="_blank"><img src="assets/img/pinterest.png" alt="Compartilhar no pinterest" width="52px"></a>
+            <a href="https://twitter.com/intent/tweet?url=alexwintergames.github.io&text=Olhe só este incrível site sobre venda de periféricos que achei!&via=PinkStorm" target="_blank"><img src="assets/img/twitter.png" alt="Compartilhar no twitter" width="52px"></a>
+            <a href="https://api.whatsapp.com/send?text=Olhe só este incrível site sobre venda de periféricos que achei! alexwintergames.github.io" target="_blank"><img src="assets/img/whatsapp.png" alt="Compartilhar no whatsapp" width="56px"></a>
+        </div>
+
+        <div class="favoritar"><p>Favoritar (1.7mil)</p></div>
+
+        <button class="favorite-button" onclick="toggleFavorite2()">
+            <img src="assets/img/heart-empty.png" alt="Heart Icon" class="empty-heart">
+            <img src="assets/img/heart-filled.png" alt="Heart Icon" class="filled-heart">
+        </button>
+        
+        <script>
+            function toggleFavorite2() {
+            var button = document.querySelector(".favorite-button");
+            var emptyHeart = button.querySelector(".empty-heart");
+            var filledHeart = button.querySelector(".filled-heart");
+  
+            if (button.classList.contains("favorited2")) {
+            button.classList.remove("favorited2");
+            emptyHeart.style.display = "inline-block";
+            filledHeart.style.display = "none";
+            } else {
+            button.classList.add("favorited2");
+            emptyHeart.style.display = "none";
+            filledHeart.style.display = "inline-block";
+            }
+        }
+        </script>
+
+        <div class="nomedop"><p>Logitech G Pro X Superlight</p></div>
+        <div class="estrela"><img src="assets/img/5stars.png" alt="5 Estrelas" width="230px"></div>
+        <div class="preco"><img src="assets/img/precodesc.png" alt="Preço com desconto" width="700px"></div>
+        <div class="frete"><img src="assets/img/frete.png" alt="Frete" width="650px"></div>
+
+        <h1 id="nome-usuario">R$939.90</h1>
+        <h1 id="nome-usuario2">R$809.90</h1>
+
+        <div class="quantidadel">
+        <div class="qntdt"><label><strong>Quantidade:</strong></label></div>
+        <input type="text" id="quantity" value="1" readonly>
+	    <button id="decrease"><img src="assets/img/menos.png" alt="Menos" width="25px"></button>
+	    <button id="increase"><img src="assets/img/mais.png" alt="Mais" width="20px"></button>
+        </div>
+
+        <button type="button" id="adicionar-carrinho2" onclick="playAlert()"><img src="assets/img/carrinhoadd.png" alt="Carrinho add" width="300px"></button>
+        <div id="alerta-carrinho">Adicionado ao carrinho!</div>
+
+        <a href="compra.html"><button type="button" id="comprar"><img src="assets/img/comprar.png" alt="Carrinho add" width="300px"></button></a>
+
+        <script>
+            const btnAdicionarCarrinho = document.getElementById("adicionar-carrinho2");
+            const alertaCarrinho = document.getElementById("alerta-carrinho");
+    
+            btnAdicionarCarrinho.addEventListener("click", () => {
+
+    
+            alertaCarrinho.style.display = "block";
+    
+            setTimeout(() => {
+            alertaCarrinho.style.display = "none";
+            }, 3000);
+            });
+        </script>
+
+        <script>
+            const imagens = document.querySelectorAll('.carousel img');
+            const imagens2 = document.querySelectorAll('.carousel2 img');
+            const botaoAnterior = document.getElementById('anterior');
+            const botaoProximo = document.getElementById('proximo');
+
+                let indice = 0;
+
+            botaoAnterior.addEventListener('click', () => {
+            imagens[indice].style.opacity = 0;
+            imagens2[indice].style.opacity = 0;
+            indice--;
+                if (indice < 0) {
+                    indice = imagens.length - 1;
+                    indice = imagens2.length - 1;
+            }
+            imagens[indice].style.opacity = 1;
+            imagens2[indice].style.opacity = 1;
+            });
+
+            botaoProximo.addEventListener('click', () => {
+            imagens[indice].style.opacity = 0;
+            imagens2[indice].style.opacity = 0;
+            indice++;
+                if (indice >= imagens.length) {
+                    indice = 0;
+            }
+            imagens[indice].style.opacity = 1;
+            imagens2[indice].style.opacity = 1;
+            });
+            
+        </script>
+
+<script>
+    var button = document.getElementById("adicionar-carrinho2");
+    var delay = 2000; // tempo de espera em milissegundos (2 segundos)
+    var canClick = true; // variável de controle para verificar se o botão pode ser clicado
+
+    function playAlert() {
+    if (canClick) {
+    // reproduzir o som de alerta
+    var audio = new Audio('alert.mp3');
+    audio.play();
+
+    // desativar o botão temporariamente
+    canClick = false;
+    button.disabled = true;
+    button.opacity = 0.6;
+
+    // aguardar o tempo de espera antes de reativar o botão
+    setTimeout(function() {
+    canClick = true;
+    button.disabled = false;
+    }, delay);
+    } 
+    }
+</script>
+<script src="assets/js/calculomouse3.js"></script>
+</body>
+</html>
