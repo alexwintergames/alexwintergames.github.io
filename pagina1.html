@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/estilo3.css">
+    <title>O que é Tech Storm</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&family=Poppins:wght@800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="inicio.html"><img src="assets/img/logo.png" alt="Logo" class="media-object  img-responsive img-thumbnail" width="250px"></a>
+        </div>
+        <div class="bdireita">
+            <img src="assets/img/bglhdireita.png" alt="Decoração direita superior" width="450px">
+        </div>
+
+        <div class="menutotal">
+            <div class="inicioa">
+                <a href="inicio.html">Início</a>
+            </div>
+            <div class="produtoa">
+                <a href="produtos.html">Produtos</a>
+            </div>
+            <div class="sobrea">
+                <a href="sobre-nos.html">Sobre</a>
+            </div>
+            <div class="ajudaa">
+                <a href="ajuda.html">Ajuda</a>
+            </div>  
+
+            <div class="pesquisa">
+                <img src="assets/img/barra de pesquisa.png" alt="Barra de pesquisa" width="700px">
+            </div>
+            <form>
+                <input type="text" id="pesquisa" name="pesquisa" placeholder="O que você procura?">
+            </form>
+            <div class="lupa">
+                <input type="image" name="lupa" id="lupa" src="assets/img/lupa.png" alt="Lupa" width="43px">
+            </div>
+            <div class="x">
+                <input type="image" name="x" id="x" src="assets/img/x.png" alt="Lupa" width="25px" onclick="limparInput()" />
+            </div>
+            <script>
+                function limparInput() {
+                    document.getElementById("pesquisa").value = "";
+                }
+            </script>
+
+            <img class="conta" src="assets/img/minha-conta.png" alt="Minha conta" width="2350px">
+            <div class="escrita" onclick="abrirPagina()"><p>Olá, Usuário!<br>Tudo bem?</p></div>
+            <script>
+                function abrirPagina() {
+                    window.location.href = "login-e-cadastro.html";
+                }
+            </script>
+
+        </div>
+    </header>
+
+<main>
+    <h1>O que é Tech Storm</h1>
+        <p>Bem-vindo à Tech Storm, onde a inovação encontra a tempestade tecnológica!</p>
+        <p>Somos uma empresa apaixonada por tecnologia, comprometida em proporcionar experiências incríveis e produtos de
+            última geração para nossos clientes. Nossa missão é levar a tempestade de tecnologia até você, oferecendo
+            produtos inovadores, desde periféricos de alta qualidade até computadores poderosos.</p>
+        <p>Na Tech Storm, não apenas seguimos as tendências, mas as criamos. Estamos constantemente buscando as
+            últimas novidades e desenvolvendo soluções que tornarão sua jornada tecnológica emocionante e única.</p>
+        <p>Junte-se a nós nesta jornada emocionante e descubra o que a Tech Storm pode oferecer para transformar sua
+            experiência tecnológica!</p>
+</main>
+</div>
+</body>
+
+</html>

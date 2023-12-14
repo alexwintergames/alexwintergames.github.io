@@ -125,6 +125,16 @@ header{
     top:394px;
     left:115px;
 }
+.produto2{
+    position:absolute;
+    top:394px;
+    left:750px;
+}
+.produto3{
+    position:absolute;
+    top:394px;
+    left:1385px;
+}
 .bproduto1{
     position:absolute;
     width:290px;
@@ -816,3 +826,32 @@ button[type="login"]{
 #cadastrarsee{
     position:absolute;
 }
+
+.hero-waves {
+    display: block;
+    margin-top: 60px;
+    width: 100%;
+    height: 80px;
+    z-index: 5;
+    position: relative
+}
+
+.wave1 use {
+    -webkit-animation: move-forever1 10s linear infinite;
+    animation: move-forever1 10s linear infinite;
+    -webkit-animation-delay: -2s;
+    animation-delay: -2s
+}
+
+.wave2 use {
+    -webkit-animation: move-forever2 8s linear infinite;
+    animation: move-forever2 8s linear infinite;
+    -webkit-animation-delay: -2s;
+    animation-delay: -2s
+}
+
+.wave3 use {
+    -webkit-animation: move-forever3 6s linear infinite;
+    animation: move-forever3 6s linear infinite;
+    -webkit-animation-delay: -2s;
+    animation-delay: -2s

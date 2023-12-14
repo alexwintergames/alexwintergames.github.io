@@ -1,0 +1,110 @@
+.logo {
+    position: absolute;
+    top: 25px;
+    left: 120px;
+}
+
+.inicioa {
+    position: absolute;
+    left: 705px;
+    top: 110px;
+}
+
+.produtoa {
+    position: absolute;
+    left: 870px;
+    top: 110px;
+}
+
+.sobrea {
+    position: absolute;
+    left: 1100px;
+    top: 110px;
+}
+
+.ajudaa {
+    position: relative;
+    left: 1320px;
+    top: 110px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+
+a:hover {
+    text-decoration: underline 5px;
+    color: #F80000;
+}
+
+#item-select {
+    text-decoration: underline 5px;
+    color: #F80000;
+}
+
+.bdireita {
+    position: absolute;
+    top: -80px;
+    left: 1429px;
+}
+
+.conta {
+    position: absolute;
+    left: 1500px;
+    top: 30px;
+    width: 350px;
+}
+
+.msg {
+    position: absolute;
+    left: 1625px;
+    top: 25px;
+    width: 200px;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+}
+h1 {
+    color: #ff65a3;
+    font-size: 3em;
+}
+.pesquisa{
+    position:absolute;
+    top:160px;
+    left:703px;
+}
+input[type="text"]{
+    position: absolute;
+    padding:10.8px;
+    width:540px;
+    top: 75px;
+    left:278px;
+    border:solid 1px white;
+    font-size:25px;
+}
+form{
+    position: absolute;
+    display: inline-block;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    top:100px;
+    left:500px;
+}   
+input:focus{
+    outline:none;
+}
+.lupa{
+   position: absolute;
+    top:105px;
+    left:630px;
+}
+.x{
+    position: absolute;
+    top:187px;
+    left:1360px;
+}
