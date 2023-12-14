@@ -12,3 +12,6 @@ Nosso projeto tem os seguintes membros:
 
 
 Este é o meu commit, por enquanto.
+
+/////////////////
+Oi, eu sou a ana e eu cuido dos requisitos funcionais e não funcionais do site.
