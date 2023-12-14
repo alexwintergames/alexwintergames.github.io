@@ -50,3 +50,10 @@ RF13 O site terá um sistema de cupons onde poderão ser conseguidos através de
 RF14 Para efetuar compras no site o cliente deverá ter um cadastro no mesmo, que funcionara como uma conta, onde poderão ser vistos pelo cliente, o seu carrinho, suas compras, seus cupons, etc.
 <br>
 RF15 O site deverá ter uma área para efetuar o pagamento
+
+
+/////////////////
+<br>
+Oi, eu sou o Arthur e eu cuido da documentação do site.
+<br>
+Na documentação nos utilizamos o padrão de documentação academica fornecido pela professora Claudia Werlich, na documentação nós informamos o nome dos integrantes do nosso grupo, o mapa do site, os wireframes, imagens recentes do site e as pesquisas realizadas.
