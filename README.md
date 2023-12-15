@@ -57,3 +57,5 @@ RF15 O site deverá ter uma área para efetuar o pagamento
 Oi, eu sou o Arthur e eu cuido da documentação do site.
 <br>
 Na documentação nos utilizamos o padrão de documentação academica fornecido pela professora Claudia Werlich, na documentação nós informamos o nome dos integrantes do nosso grupo, o mapa do site, os wireframes, imagens recentes do site e as pesquisas realizadas.
+<br>
+Oi, eu sou o Victhor e eu cuido da parte de programação do site.
